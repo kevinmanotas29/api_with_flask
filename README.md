@@ -1,6 +1,6 @@
 # Flask Users API
 
-A simple REST API built with Flask that implements a full CRUD system using PostgreSQL.
+A simple REST API built with Flask that implements a full CRUD system using PostgreSQL and JWT authentication.
 
 ## Features
 
@@ -9,7 +9,16 @@ A simple REST API built with Flask that implements a full CRUD system using Post
 - Get user by ID (GET)
 - Update users (PUT)
 - Delete users (DELETE)
+- Authentication with JWT 
 
+## Authentication
+
+This API uses JWT (JSON Web Token) for protected routes.
+
+### Login
+
+```http
+POST /login
 
 ## Endpoints
 
@@ -27,6 +36,7 @@ DELETE | /users/<id>     Delete user
 - Flask
 - PostgreSQL
 - SQLAlchemy
+- JWT (flask-jwt-extended)
 
 ---
 
